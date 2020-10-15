@@ -6,8 +6,6 @@ import { LogoMarker } from '../../images';
 
 import { Container, SideBar, ButtonAdd } from './styles';
 
-import 'leaflet/dist/leaflet.css';
-
 const OrphanagesMap: React.FC = () => {
   return (
     <Container>
