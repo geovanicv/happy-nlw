@@ -44,15 +44,15 @@ export const ImagesContent = styled.div`
 
     opacity: 0.6;
 
-    .active {
-      opacity: 1;
-    }
-
     img {
       width: 100%;
       height: 88px;
       object-fit: cover;
     }
+  }
+
+  .active {
+    opacity: 1;
   }
 `;
 
@@ -137,6 +137,12 @@ export const OpenOnWeekends = styled(Hour)`
   background: linear-gradient(154.16deg, #edfff6 7.85%, #ffffff 91.03%);
   border: 1px solid #a1e9c5;
   color: #37c77f;
+`;
+
+export const DontOpenOnWeekends = styled(Hour)`
+  background: linear-gradient(154.16deg, #fdf0f5 7.85%, #ffffff 91.03%);
+  border: 1px solid #ffbcd4;
+  color: #ff669d;
 `;
 
 export const ContactButton = styled.div`
