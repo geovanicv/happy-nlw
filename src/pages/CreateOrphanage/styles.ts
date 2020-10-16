@@ -106,16 +106,51 @@ export const CreateOrphanageForm = styled.form`
   }
 `;
 
-export const NewImageButton = styled.button`
-  width: 100%;
-  height: 64px;
-  background: #f5f8fa;
-  border: 1px dashed #96d2f0;
-  border-radius: 20px;
-  cursor: pointer;
+export const ImagesContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 16px;
+  margin-top: 20px;
+
+  label {
+    height: 96px;
+    background: #f5f8fa;
+    border: 1px dashed #96d2f0;
+    border-radius: 20px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input[type='file'] {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
 `;
 
-export const ButtonSelect = styled.button`
+export const ButtonsContent = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 24px;
+
+  span {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #8fa7b3;
+    line-height: 24px;
+  }
+`;
+
+export const ButtonSelect = styled.div`
   width: 100%;
   border: 0;
   background: transparent;
