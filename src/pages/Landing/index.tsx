@@ -23,7 +23,7 @@ const Landing: React.FC = () => {
         </Location>
 
         <EnterApp>
-          <Link to="/">
+          <Link to="/app">
             <FiArrowRight size={26} color="#707070" />
           </Link>
         </EnterApp>
