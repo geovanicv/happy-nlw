@@ -7,6 +7,10 @@ export const Container = styled.div`
   position: relative;
   display: flex;
 
+  @media (max-width: 900px) {
+    justify-content: center;
+  }
+
   .leaflet-container {
     z-index: 5;
   }
@@ -44,6 +48,36 @@ export const Container = styled.div`
   }
 `;
 
+export const OverMapHeader = styled.div`
+  display: none;
+
+  @media (max-width: 900px) {
+    margin-top: 20px;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: absolute;
+    /* right: 40px;
+    top: 40px; */
+
+    width: auto;
+    height: auto;
+    padding: 5px 20px;
+
+    border-radius: 20px;
+
+    background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+
+    svg {
+      width: 32px;
+      margin-right: 16px;
+    }
+  }
+`;
+
 export const SideBar = styled.aside`
   width: 440px;
   background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
@@ -76,6 +110,10 @@ export const SideBar = styled.aside`
     strong {
       font-weight: 800;
     }
+  }
+
+  @media (max-width: 900px) {
+    display: none;
   }
 `;
 

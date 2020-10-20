@@ -5,7 +5,7 @@ import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
 
 import { LogoMarker } from '../../images';
 
-import { Container, SideBar, ButtonAdd } from './styles';
+import { Container, SideBar, OverMapHeader, ButtonAdd } from './styles';
 import mapIcon from '../../utils/mapIcon';
 import api from '../../services/api';
 
@@ -40,6 +40,11 @@ const OrphanagesMap: React.FC = () => {
           <span>São Sebastião</span>
         </footer>
       </SideBar>
+
+      <OverMapHeader>
+        <LogoMarker />
+        <h2>Escolha um orfanato no mapa</h2>
+      </OverMapHeader>
 
       <Map
         center={[-27.2092052, -49.6401092]}

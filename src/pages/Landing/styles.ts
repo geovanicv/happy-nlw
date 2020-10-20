@@ -10,6 +10,8 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  padding: 20px;
 `;
 
 export const Wrapper = styled.div`
@@ -27,6 +29,15 @@ export const Wrapper = styled.div`
   justify-content: space-between;
 
   background: url(${Ilustra}) no-repeat 80% center;
+
+  @media (max-width: 900px) {
+    max-height: 1000px;
+
+    background: url(${Ilustra}) no-repeat 90% 93%;
+    background-size: 360px;
+
+    justify-content: flex-start;
+  }
 `;
 
 export const Main = styled.main`
@@ -43,6 +54,18 @@ export const Main = styled.main`
     font-size: 2.4rem;
     line-height: 3.4rem;
   }
+
+  @media (max-width: 900px) {
+    max-width: 30rem;
+
+    h1 {
+      margin-top: 40px;
+    }
+
+    p {
+      margin-top: 20px;
+    }
+  }
 `;
 
 export const Location = styled.div`
@@ -57,6 +80,14 @@ export const Location = styled.div`
   flex-direction: column;
 
   text-align: right;
+
+  @media (max-width: 900px) {
+    position: absolute;
+    text-align: left;
+    top: auto;
+    left: 0;
+    bottom: 0;
+  }
 `;
 
 export const EnterApp = styled.div`
