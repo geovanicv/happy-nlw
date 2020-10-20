@@ -7,11 +7,17 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   label: string;
 }
 
-const Input: React.FC<InputProps> = ({ label, name, children, ...rest }) => {
+const Input: React.FC<InputProps> = ({
+  type,
+  label,
+  name,
+  children,
+  ...rest
+}) => {
   return (
     <Container>
       <label htmlFor={name}>{label}</label>
-      <input type="text" id={name} {...rest} />
+      <input type={type || 'text'} id={name} {...rest} />
 
       {children}
     </Container>

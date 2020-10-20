@@ -21,7 +21,7 @@ export const Container = styled.div`
   textarea {
     width: 100%;
     background: #f5f8fa;
-    border: 1px solid #d3e2e5;
+    border: 1px solid #a1e9c5;
     border-radius: 20px;
     outline: none;
     color: #5c8599;
