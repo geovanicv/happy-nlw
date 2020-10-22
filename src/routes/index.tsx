@@ -10,6 +10,7 @@ import SuccessMessage from '../components/AlertMessage/SuccessMessage';
 import ConfirmMessage from '../components/AlertMessage/ConfirmMessage';
 import ForgotPassword from '../pages/Login/ForgotPassword';
 import ResetPassword from '../pages/Login/ResetPassword';
+import RegistredOrphanages from '../pages/Dashboard/RegistredOrphanages';
 
 const Routes: React.FC = () => (
   <BrowserRouter>
@@ -26,6 +27,8 @@ const Routes: React.FC = () => (
 
       <Route path="/alert/success" component={SuccessMessage} />
       <Route path="/alert/confirm" component={ConfirmMessage} />
+
+      <Route path="/dashboard" component={RegistredOrphanages} />
     </Switch>
   </BrowserRouter>
 );
