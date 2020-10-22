@@ -37,7 +37,7 @@ const SignIn: React.FC = () => {
             <span>Esqueci minha senha</span>
           </PasswordOptions>
 
-          <Button>Entrar</Button>
+          <Button variant="green">Entrar</Button>
 
           <Link to="orphanages/create">
             <FiPlus size={32} color="#FFF" />

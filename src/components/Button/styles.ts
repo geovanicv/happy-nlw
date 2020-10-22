@@ -1,7 +1,25 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export const Container = styled.button`
-  background: #37c77f;
+import { ButtonProps } from './index';
+
+const variants = {
+  green: css`
+    background: #37c77f;
+
+    :hover {
+      background: #3ee08f;
+    }
+  `,
+  pink: css`
+    background: #d6487b;
+
+    :hover {
+      background: #ff6da2;
+    }
+  `,
+};
+
+export const Container = styled.button<ButtonProps>`
   height: 64px;
   border-radius: 20px;
   border: 0;
@@ -10,6 +28,9 @@ export const Container = styled.button`
   font-weight: 600;
   margin-top: 16px;
   width: 100%;
+  transition: background 0.4s;
+
+  ${({ variant }) => variant && variants[variant]}
 
   cursor: pointer;
 `;
