@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import LogoTipo from '../../images/logo-readme.svg';
+
 export const Background = styled.div`
   width: 100%;
   height: 100%;
@@ -8,6 +10,10 @@ export const Background = styled.div`
   align-items: center;
   justify-content: center;
   background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+
+  @media (max-width: 800px) {
+    display: none;
+  }
 `;
 
 export const Container = styled.div`
@@ -30,6 +36,10 @@ export const Content = styled.div`
   max-width: 600px;
   min-width: 500px;
 
+  @media (max-width: 800px) {
+    max-width: 100%;
+  }
+
   form {
     position: relative;
 
@@ -39,6 +49,12 @@ export const Content = styled.div`
 
     width: 80%;
     height: 90%;
+
+    p {
+      font-size: 18px;
+      margin: 24px 0;
+      max-width: 320px;
+    }
 
     > a {
       position: absolute;
@@ -56,6 +72,14 @@ export const Content = styled.div`
         stroke-width: 2.4;
       }
     }
+
+    > button {
+      margin-top: 24px;
+    }
+
+    @media (max-width: 800px) {
+      background: url(${LogoTipo}) no-repeat 44% 5%;
+    }
   }
 `;
 
@@ -66,6 +90,14 @@ export const PasswordOptions = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #8fa7b2;
+  }
 `;
 
 export const Remember = styled.div`
