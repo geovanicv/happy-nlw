@@ -17,26 +17,31 @@ export const Container = styled.div`
     }
   }
 
-  input,
-  textarea {
+  input {
+    border: 0;
+    background: transparent;
     width: 100%;
-    background: #f5f8fa;
-    border: 1px solid #d3e2e5;
-    border-radius: 20px;
-    outline: none;
+    height: 100%;
     color: #5c8599;
   }
+`;
 
-  input {
-    height: 64px;
-    padding: 0 16px;
-  }
+export const InputContainer = styled.div`
+  display: flex;
+  align-items: center;
 
-  textarea {
-    min-height: 120px;
-    max-height: 240px;
-    resize: vertical;
-    padding: 16px;
-    line-height: 28px;
+  width: 100%;
+  background: #f5f8fa;
+  border: 1px solid #a1e9c5;
+  border-radius: 20px;
+  outline: none;
+  height: 64px;
+  padding: 0 16px;
+
+  button {
+    display: flex;
+    background: transparent;
+    border: 0;
+    color: #5c8599;
   }
 `;

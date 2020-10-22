@@ -1,17 +1,38 @@
-import React, { InputHTMLAttributes } from 'react';
+import React, { InputHTMLAttributes, useState } from 'react';
+import { FiEye, FiEyeOff } from 'react-icons/fi';
 
-import { Container } from './styles';
+import { Container, InputContainer } from './styles';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string;
   label: string;
 }
 
-const Input: React.FC<InputProps> = ({ label, name, children, ...rest }) => {
+const Input: React.FC<InputProps> = ({
+  type,
+  label,
+  name,
+  children,
+  ...rest
+}) => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const Icon = isVisible ? <FiEye size={26} /> : <FiEyeOff size={26} />;
+  const passwordType = isVisible ? 'text' : 'password';
+
   return (
     <Container>
       <label htmlFor={name}>{label}</label>
-      <input type="text" id={name} {...rest} />
+      <InputContainer>
+        <input
+          type={type === 'password' ? passwordType : type}
+          id={name}
+          {...rest}
+        />
+        <button type="button" onClick={() => setIsVisible(prev => !prev)}>
+          {type === 'password' && Icon}
+        </button>
+      </InputContainer>
 
       {children}
     </Container>
