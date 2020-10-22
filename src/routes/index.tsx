@@ -8,6 +8,8 @@ import CreateOrphanage from '../pages/CreateOrphanage';
 import SignIn from '../pages/Login/SignIn';
 import SuccessMessage from '../components/AlertMessage/SuccessMessage';
 import ConfirmMessage from '../components/AlertMessage/ConfirmMessage';
+import ForgotPassword from '../pages/Login/ForgotPassword';
+import ResetPassword from '../pages/Login/ResetPassword';
 
 const Routes: React.FC = () => (
   <BrowserRouter>
@@ -18,7 +20,9 @@ const Routes: React.FC = () => (
       <Route path="/orphanages/create" component={CreateOrphanage} />
       <Route path="/orphanages/:id" component={Orphanage} />
 
-      <Route path="/login" component={SignIn} />
+      <Route path="/login" exact component={SignIn} />
+      <Route path="/login/forgot" component={ForgotPassword} />
+      <Route path="/login/reset" component={ResetPassword} />
 
       <Route path="/alert/success" component={SuccessMessage} />
       <Route path="/alert/confirm" component={ConfirmMessage} />
