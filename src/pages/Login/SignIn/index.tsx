@@ -14,7 +14,7 @@ import {
   Content,
   PasswordOptions,
   Remember,
-} from './styles';
+} from '../styles';
 
 const SignIn: React.FC = () => {
   return (
@@ -34,7 +34,7 @@ const SignIn: React.FC = () => {
               <input type="checkbox" name="remember" id="remember" />
               <label htmlFor="remember">Lembrar-me</label>
             </Remember>
-            <span>Esqueci minha senha</span>
+            <Link to="login/forgot">Esqueci minha senha</Link>
           </PasswordOptions>
 
           <Button variant="green">Entrar</Button>
