@@ -1,6 +1,5 @@
 import React from 'react';
 import { FiAlertCircle, FiMapPin, FiPower } from 'react-icons/fi';
-// import { NavLink } from 'react-router-dom';
 
 import { LogoMarker } from '../../../images';
 
@@ -18,7 +17,7 @@ const Header: React.FC = () => {
           </Nav>
         </li>
         <li>
-          <Nav hasUnread to="/dashboard2">
+          <Nav hasUnread to="/pending">
             <FiAlertCircle size={24} />
           </Nav>
         </li>

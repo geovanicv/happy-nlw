@@ -11,6 +11,7 @@ import ConfirmMessage from '../components/AlertMessage/ConfirmMessage';
 import ForgotPassword from '../pages/Login/ForgotPassword';
 import ResetPassword from '../pages/Login/ResetPassword';
 import RegistredOrphanages from '../pages/Dashboard/RegistredOrphanages';
+import PendingOrphanages from '../pages/Dashboard/PendingOrphanages';
 
 const Routes: React.FC = () => (
   <BrowserRouter>
@@ -28,7 +29,8 @@ const Routes: React.FC = () => (
       <Route path="/alert/success" component={SuccessMessage} />
       <Route path="/alert/confirm" component={ConfirmMessage} />
 
-      <Route path="/dashboard" component={RegistredOrphanages} />
+      <Route path="/dashboard" exact component={RegistredOrphanages} />
+      <Route path="/pending" component={PendingOrphanages} />
     </Switch>
   </BrowserRouter>
 );
