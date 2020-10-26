@@ -27,10 +27,10 @@ The following features have been implemented:
 </p>
 
 <p align="center">
-  <img src="./src/images/screenshots/hppy7.png" height="400" alt="Routes"/>
-  <img src="./src/images/screenshots/hppy3.png" height="400" alt="Routes"/>
-  <img src="./src/images/screenshots/hppy6.png" height="400" alt="Routes"/>
-  <img src="./src/images/screenshots/hppy4.png" height="400" alt="Routes"/>
+  <img src="./src/images/screenshots/hppy7.png" height="350" alt="Routes"/>
+  <img src="./src/images/screenshots/hppy3.png" height="350" alt="Routes"/>
+  <img src="./src/images/screenshots/hppy6.png" height="350" alt="Routes"/>
+  <img src="./src/images/screenshots/hppy4.png" height="350" alt="Routes"/>
 </p>
 
 <p align="center">
