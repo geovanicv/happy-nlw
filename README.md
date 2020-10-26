@@ -12,6 +12,31 @@ This is an app created to bring people closer to orphanages making kids more hap
 
 I'm using this project to improve my git knowledge, creating a real project flow with git flow.
 
+# :cool: 2.0 version
+
+Some screenshots of version 2.0
+
+The following features have been implemented:
+
+- Login
+- Dashboard
+- Responsiveness
+
+<p align="center">
+  <img src="./src/images/screenshots/hppy2.png" alt="Routes"/>
+</p>
+
+<p align="center">
+  <img src="./src/images/screenshots/hppy7.png" alt="Routes"/>
+  <img src="./src/images/screenshots/hppy3.png" alt="Routes"/>
+  <img src="./src/images/screenshots/hppy6.png" alt="Routes"/>
+  <img src="./src/images/screenshots/hppy4.png" alt="Routes"/>
+</p>
+
+<p align="center">
+  <img src="./src/images/screenshots/hppy.png" alt="Routes"/>
+</p>
+
 # :rocket: Technologies
 This project was developed with the following technologies:
 
