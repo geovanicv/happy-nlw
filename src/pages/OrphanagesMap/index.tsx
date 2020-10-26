@@ -47,7 +47,7 @@ const OrphanagesMap: React.FC = () => {
       </OverMapHeader>
 
       <Map
-        center={[-27.2092052, -49.6401092]}
+        center={[-15.8946081, -47.7736313]}
         zoom={15}
         style={{ width: '100%', height: '100%' }}
       >
